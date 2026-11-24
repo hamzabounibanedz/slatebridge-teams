@@ -24,5 +24,5 @@ jobs:
           npx --no-install prisma generate
           npx --no-install next build
           npm start >/tmp/site.log 2>&1 &
-          curl --retry 15 --retry-all-errors --retry-delay 1 -fsSL http://localhost:3000 -o /tmp/home
+          curl --retry 15 --retry-all-errors --retry-delay 1 -fsSL http://localhost:4002 -o /tmp/home || { tail -30 /tmp/site.log; exit 1; }
           grep -Fq "Slatebridge Teams" /tmp/home
