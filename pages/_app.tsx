@@ -1,3 +1,4 @@
+import { IBM_Plex_Sans } from 'next/font/google';
 import app from '@/lib/app';
 import { SessionProvider } from 'next-auth/react';
 import { appWithTranslation } from 'next-i18next';
@@ -14,6 +15,8 @@ import env from '@/lib/env';
 import { Theme, applyTheme } from '@/lib/theme';
 import { Themer } from '@boxyhq/react-ui/shared';
 import { AccountLayout } from '@/components/layouts';
+
+const brandFont = IBM_Plex_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const { session, ...props } = pageProps;
@@ -38,6 +41,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <>
+      <style jsx global>{`body { font-family: ${brandFont.style.fontFamily}; }`}</style>
       <Head>
         <title>{app.name}</title>
         <link rel="icon" href="/brand-mark.svg" />

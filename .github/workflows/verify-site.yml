@@ -40,6 +40,7 @@ jobs:
                 await page.setViewportSize({ width, height: 900 });
                 await page.goto("http://localhost:4002/", { waitUntil: "domcontentloaded" });
                 await page.locator("body").waitFor();
+                await page.waitForFunction(() => document.querySelector('img[src="/brand-mark.svg"]')?.naturalWidth > 0);
                 if (!(await page.title()).includes("Slatebridge Teams") && !(await page.locator("body").innerText()).includes("Slatebridge Teams")) throw Error("Missing site identity");
                 await page.screenshot({ path: process.env.RUNNER_TEMP + "/site-" + width + ".png", animations: "disabled" });
               }

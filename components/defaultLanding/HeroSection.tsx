@@ -4,10 +4,10 @@ import Link from 'next/link';
 const HeroSection = () => {
   const { t } = useTranslation('common');
   return (
-    <div className="hero py-52">
+    <div className="hero slate-intro py-24 md:py-36">
       <div className="hero-content text-center">
-        <div className="max-w-7xl">
-          <h1 className="text-5xl font-bold"> {t('enterprise-saas-kit')}</h1>
+        <div className="max-w-3xl">
+          <h1 className="text-4xl font-bold tracking-tight md:text-6xl"> {t('enterprise-saas-kit')}</h1>
           <p className="py-6 text-2xl font-normal">
             {t('kickstart-your-enterprise')}
           </p>
@@ -19,7 +19,7 @@ const HeroSection = () => {
               {t('get-started')}
             </Link>
             <Link
-              href="https://github.com/boxyhq/saas-starter-kit"
+              href="https://github.com/hamzabounibanedz/slatebridge-teams"
               className="btn btn-outline px-8"
             >
               GitHub

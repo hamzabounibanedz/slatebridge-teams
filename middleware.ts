@@ -57,6 +57,7 @@ const generateCSP = (): string => {
 
 // Add routes that don't require authentication
 const unAuthenticatedRoutes = [
+  '/brand-mark.svg',
   '/api/hello',
   '/api/health',
   '/api/auth/**',
