@@ -19,14 +19,14 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>{t('homepage-title')}</title>
+        <title>Slatebridge Teams | Team workspace</title>
       </Head>
 
       <div className="container mx-auto">
         <div className="navbar bg-base-100 px-0 sm:px-1">
           <div className="flex-1">
             <Link href="/" className="btn btn-ghost text-xl normal-case">
-              BoxyHQ
+              <img src="/brand-mark.svg" alt="" width="28" height="28" /> Slatebridge Teams
             </Link>
           </div>
           <div className="flex-none">
