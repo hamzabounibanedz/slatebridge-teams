@@ -1,14 +1,10 @@
 [
   {
-    "question": "What is BoxyHQ?",
-    "answer": "Enterprise readiness for B2B SaaS, straight out of the box."
+    "question": "How do I join my team?",
+    "answer": "Open the invitation from your team administrator and sign in with the email address that received it."
   },
   {
-    "question": "What BoxyHQ offers?",
-    "answer": "At BoxyHQ we enable you to add plug-and-play enterprise-ready features to your SaaS product. Show enterprise customers and InfoSec teams you are ready to pass their processes with flying colors. We are open-source and free!"
-  },
-  {
-    "question": "Is BoxyHQ offers developer security tools?",
-    "answer": "We have curated a list of awesome open-source developer security tools.It includes security principles and controls relevant to popular compliance certifications (like ISO27001, SOC2, MVSP, etc.)"
+    "question": "Can I use my organization’s sign-in?",
+    "answer": "Yes. Once your administrator configures SAML, you can use the single sign-on option on the sign-in page."
   }
 ]
